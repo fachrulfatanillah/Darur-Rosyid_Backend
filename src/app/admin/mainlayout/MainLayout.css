@@ -1,0 +1,29 @@
+/* ==================== STYLE MAIN LAYOUT ==================== */
+.app-layout {
+    display: flex;
+}
+
+.main-content-main-layout {
+    width: 100%;
+    transition: padding-left 0.3s ease-in-out;
+    padding-top: 8vh;
+}
+
+.main-content-main-layout.collapsed {
+    padding-left: 60px;
+}
+
+.main-content-main-layout.expanded {
+    padding-left: 34vh;
+}
+
+/* ==================== STYLE RESPONSIVE LAYOUT ==================== */
+@media screen and (max-width: 768px) {
+    .main-content-main-layout.collapsed {
+        padding-left: 60px;
+    }
+    
+    .main-content-main-layout.expanded {
+        padding-left: 60px;
+    }
+}

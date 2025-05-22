@@ -1,0 +1,832 @@
+/* ======= start btn style ======== */
+.btn-add-admin-index {
+    background-color: #4f46e5;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-add-admin-index:hover {
+    background-color: #4338ca;
+}
+
+.btn-add-admin-index:active {
+    background-color: #3730a3;
+}
+/* edit btn */
+.btn-edit-admin-index {
+    background-color: #3b82f6;
+    color: white;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-edit-admin-index:hover {
+    background-color: #2563eb;
+}
+
+.btn-edit-admin-index:active {
+    background-color: #1d4ed8;
+}
+/* delete btn */
+.btn-delete-admin-index {
+    background-color: #ef4444; /* red-500 */
+    color: white;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-delete-admin-index:hover {
+    background-color: #dc2626; /* red-600 */
+}
+
+.btn-delete-admin-index:active {
+    background-color: #b91c1c; /* red-700 */
+}
+/* ======= end btn style ======== */
+.section-admin-index {
+    width: 100%;
+    height: auto;
+    background-color: rgba(56, 140, 140, 0.799);
+}
+
+.container-admin-index {
+    padding: 0px 2em;
+}
+
+.container-admin-index-title {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+/* ============ header =========== */
+.container-admin-index-header {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    gap: 1em;
+}
+
+.container-admin-index-header-right,
+.container-admin-index-header-left {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.582);
+    border-radius: 20px;
+}
+
+/* ------ left ------ */
+.container-admin-index-header-left-title {
+    width: 100%;
+    height: 10%;
+    align-content: center;
+    justify-items: center;
+}
+
+.container-admin-index-header-left-title h3 {
+    color: black;
+}
+
+.container-admin-index-header-left-image {
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+
+.container-admin-index-header-left-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-admin-index-header-left-image-text-overlay {
+    position: absolute;
+    width: 80%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.486);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.container-admin-index-header-left-image-text-overlay h5 {
+    font-size: 0.9em;
+}
+
+.container-admin-index-header-left-image-text-overlay span {
+    font-size: 0.8em;
+}
+
+/* ------ right ------ */
+.container-admin-index-header-right-title {
+    width: 100%;
+    height: 10%;
+    align-content: center;
+    justify-items: center;
+}
+
+.container-admin-index-header-right-title h3 {
+    color: black;
+}
+
+.container-admin-index-header-right-control-panel {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.container-admin-index-header-right-control-panel-togle-menu {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.container-admin-index-header-right-control-panel-togle-menu span {
+    color: black;
+}
+
+.admin-index-toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 22px;
+    margin-left: 10px;
+}
+
+.admin-index-toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.admin-index-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.admin-index-slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 1px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .admin-index-slider {
+    background-color: darkcyan;
+}
+
+input:checked + .admin-index-slider:before {
+    transform: translateX(24px);
+}
+
+.container-admin-index-header-right-control-panel-upload-image {
+    margin-top: 10px;
+}
+
+.container-admin-index-header-right-control-panel-upload-image span {
+    color: black;
+}
+
+.container-admin-index-header-right-control-panel-upload-image input {
+    margin-left: 10px;
+}
+
+.custom-file-upload input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    background-color: #4f46e5;
+    color: white;
+    margin-left: 10px;
+    padding: 7px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.custom-file-upload:hover {
+    background-color: #4338ca;
+}
+
+.file-name {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #444;
+    font-style: italic;
+}
+
+.container-admin-index-header-right-control-panel-text-input {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.container-admin-index-header-right-control-panel-text-input label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.container-admin-index-header-right-control-panel-text-input input {
+    margin-top: 6px;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.704);
+    border: 1px solid black;
+    color: black;
+}
+
+.container-admin-index-header-right-control-panel-text-input input:focus {
+    border-color: darkcyan;
+}
+
+.container-admin-index-header-right-control-panel-button {
+    display: flex;
+    align-items: end;
+    justify-content: flex-end; /* Tombol ke kanan */
+    gap: 12px;
+    margin-top: 24px;
+}
+
+/* Tombol umum */
+.container-admin-index-header-right-control-panel-button button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Tombol Batal */
+.btn-cancel {
+    background-color: #e5e7eb; /* abu-abu soft */
+    color: #374151;
+}
+
+.btn-cancel:hover {
+    background-color: #d1d5db;
+}
+
+/* Tombol Simpan */
+.btn-save {
+    background-color: #4f46e5;
+    color: white;
+}
+
+.btn-save:hover {
+    background-color: #4338ca;
+}
+
+.btn-save:active {
+    transform: scale(0.98);
+}
+
+/* ============ academic ============ */
+.container-admin-index-academic {
+    width: 100%;
+    height: auto;
+    margin-top: 2em;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.582);
+}
+
+.container-admin-index-academic-title {
+    width: 100%;
+    height: 4em;
+    display: flex;
+}
+
+.admin-index-academic-title-left,
+.admin-index-academic-title-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.admin-index-academic-title-left {
+    padding-left: 1em;
+}
+
+.admin-index-academic-title-right {
+    display: flex;
+    justify-content: end;
+    padding-right: 1em;
+}
+
+.admin-index-academic-divider {
+    height: 1px;
+    background-color: darkcyan;
+    width: 97%;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.admin-index-academic-wraper-content {
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 1em;
+}
+
+.admin-index-academic-content {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.704);
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    display: flex;
+    padding: 1em;
+    margin-bottom: 1em;
+    color: black;
+}
+.admin-index-academic-content-left {
+    width: 75%;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+}
+
+.admin-index-academic-content-left-image-wrapper-flex {
+    width: 100%;
+    display: flex;
+    gap: 1em;
+}
+
+.admin-index-academic-content-left-image-wrapper-left,
+.admin-index-academic-content-left-image-wrapper-right {
+    width: 50%;
+    height: 100%;
+}
+
+.admin-index-academic-content-left-image-wrapper-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+.admin-index-academic-content-left-image-wrapper-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #333;
+    border-radius: 10px;
+}
+
+.admin-index-academic-content-left-image-wrapper-right h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.admin-index-academic-content-left-image-wrapper-right p {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0;
+}
+
+.admin-index-academic-content-left-image {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.admin-index-academic-content-left-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+.admin-index-academic-content-left-image-caption-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 51, 51, 0.6);
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 14px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.admin-index-academic-content-left h4 {
+    padding-bottom: 1em;
+}
+
+.admin-index-academic-content-left p {
+    text-align: justify;
+}
+
+.admin-index-academic-content-right {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    gap: 10px;
+}
+
+.admin-index-academic-bottom {
+    width: 100%;
+    height: 1em;
+}
+
+@media screen and (max-width: 1024px) {
+    /* start responsive admin header */
+    .container-admin-index-header {
+        height: auto;
+        display: block;
+    }
+
+    .container-admin-index-header-right,
+    .container-admin-index-header-left {
+        width: 100%;
+        height: 60vh;
+        background-color: rgba(255, 255, 255, 0.582);
+        border-radius: 20px;
+    }
+
+    .container-admin-index-header-right {
+        margin-top: 10px;
+    }
+    /* end responsive admin header */
+    /* start responsive admin akademik */
+    .admin-index-academic-content {
+        display: block;
+        margin-bottom: 0.8em;
+    }
+    .admin-index-academic-content-left {
+        width: 100%;
+        padding-top: 0em;
+        padding-left: 0em;
+        padding-bottom: 0em;
+    }
+    .admin-index-academic-content-right {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding-top: 1em;
+        padding-bottom: 0em;
+        gap: 10px;
+    }
+    /* end responsive admin akademik */
+}
+
+@media screen and (max-width: 768px) {
+    .container-admin-index {
+        padding: 0px 1em;
+    }
+    /* start responsive admin akademik */
+    .container-admin-index-academic-title {
+        width: 100%;
+        height: 6em;
+        display: block;
+    }
+
+    .admin-index-academic-title-left,
+    .admin-index-academic-title-right {
+        width: 100%;
+        height: 50%;
+    }
+    .admin-index-academic-title-left {
+        justify-content: center;
+    }
+    .admin-index-academic-title-right {
+        display: flex;
+        justify-content: end;
+        padding-left: 1em;
+        padding-bottom: 1em;
+    }
+    .admin-index-academic-content-left-image {
+        width: 100%;
+    }
+    .admin-index-academic-divider{
+        width: 90%;
+    }
+    .admin-index-academic-content-left-image-wrapper-flex {
+        width: 100%;
+        display: block;
+        gap: 1em;
+    }
+    .admin-index-academic-content-left-image-wrapper-left,
+    .admin-index-academic-content-left-image-wrapper-right {
+        width: 100%;
+    }
+    .admin-index-academic-content-left-image-wrapper-right {
+        margin-top: 1em;
+    }
+    /* end responsive admin akademik */
+}
+@media screen and (max-width: 480px) {
+    .container-admin-index {
+        padding: 0px 0.5em;
+    }
+    /* start responsive admin akademik */
+    .admin-index-academic-title-left,
+    .admin-index-academic-title-right {
+        padding-left: 0.5em;
+    }
+    .admin-index-academic-wraper-content {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    .admin-index-academic-content {
+        padding: 0.5em;
+        margin-bottom: 1em;
+    }
+    .admin-index-academic-content-left {
+        padding-top: 0.5em;
+        padding-left: 0em;
+        padding-bottom: 0em;
+    }
+
+    .admin-index-academic-content-left h4 {
+        padding-bottom: 0.5em;
+    }
+    .admin-index-academic-content-left p {
+        text-align: left;
+    }
+    /* end responsive admin akademik */
+
+    /* start responsive admin btn */
+    .btn-add-admin-index {
+        padding: 10px 14px;
+        font-size: 12px;
+    }
+    /* edit btn */
+    .btn-edit-admin-index {
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+    /* delete btn */
+    .btn-delete-admin-index {
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+    /* end responsive admin btn */
+}
+
+
+/* Overlay: latar belakang gelap */
+.admin-index-modal-overlay-add-academic {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.793); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+/* Isi modal */
+.admin-index-modal-content-add-academic {
+    background-color: #ffffff;
+    padding: 2em;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.625);
+    animation: fadeIn 0.3s ease;
+    color: black;
+}
+
+/* Tombol modal */
+.admin-index-modal-actions-add-academic {
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.admin-index-modal-form-add-academic {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 1.5em 0;
+}
+
+.admin-index-modal-form-add-academic label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #333;
+}
+
+.admin-index-modal-form-add-academic input,
+.admin-index-modal-form-add-academic textarea {
+    margin-top: 6px;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #6f6f6f;
+    border-radius: 6px;
+    outline: none;
+    resize: vertical;background-color: rgba(255, 255, 255, 0.704);
+    color: blacks;
+}
+
+.admin-index-modal-form-add-academic input:focus,
+.admin-index-modal-form-add-academic textarea:focus {
+    border-color: darkcyan;
+}
+
+.btn-cancel,
+.btn-confirm {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cancel {
+    background-color: #c7c9cd;
+    color: #374151;
+}
+
+.btn-cancel:hover {
+    background-color: #d1d5db;
+}
+
+.btn-confirm {
+    background-color: #4f46e5;
+    color: white;
+}
+
+.btn-confirm:hover {
+    background-color: #4338ca;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.modal-overlay-delete-academic {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-content-delete-academic {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease;
+    color: black;
+}
+
+.icon-delete-warning {
+    font-size: 40px;
+    color: #ef4444; /* merah - red-500 */
+    margin-bottom: 12px;
+}
+
+.modal-actions-delete-academic {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 1.5em;
+}
+
+.modal-actions-delete-academic .btn-cancel {
+    background-color: #e5e7eb;
+    color: #374151;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.modal-actions-delete-academic .btn-cancel:hover {
+    background-color: #d1d5db;
+}
+
+.modal-actions-delete-academic .btn-delete {
+    background-color: #ef4444;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.modal-actions-delete-academic .btn-delete:hover {
+    background-color: #dc2626;
+}
+
+/* modal image */
+.admin-index-modal-form-add-academic input[type="file"] {
+    margin-top: 6px;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    background-color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-index-modal-form-add-academic input[type="file"]:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+/* Optional: file input text color for better visibility */
+.admin-index-modal-form-add-academic input[type="file"]::file-selector-button {
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 12px;
+}
+
+.admin-index-modal-form-add-academic input[type="file"]::file-selector-button:hover {
+    background-color: #4338ca;
+}

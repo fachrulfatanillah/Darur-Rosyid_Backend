@@ -1,0 +1,202 @@
+.top-navbar {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: white;
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.container-profile-top-navbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  
+.profile-img-top-navbar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-img-top-navbar:hover {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  
+.profile-dropdown-top-navbar {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: white;
+    width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    padding: 16px;
+    z-index: 99;
+    animation: fadeIn 0.3s ease;
+}
+  
+.profile-header-top-navbar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+  
+.dropdown-avatar-top-navbar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+    
+.dropdown-email-top-navbar {
+    font-size: 0.75em;
+    color: black;
+    margin: 0;
+    font-weight: bold;
+}
+  
+.dropdown-menu-top-navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.dropdown-menu-top-navbar li {
+    padding: 10px 12px;
+    font-size: 0.875em;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+    cursor: pointer;
+}
+  
+.dropdown-menu-top-navbar li:hover {
+    background-color: rgba(157, 157, 157, 0.486);
+}
+
+.menu-icon-top-navbar {
+    margin-right: 10px;
+    font-size: 16px;
+    vertical-align: middle;
+}
+  
+
+/* ======== Responsive Styles ======== */
+
+@media screen and (max-width: 1024px) {
+    .top-navbar {
+      padding: 10px 30px;
+      gap: 16px;
+    }
+  
+    .profile-dropdown-top-navbar {
+      top: 55px;
+      width: 260px;
+      padding: 14px;
+    }
+  
+    .dropdown-avatar-top-navbar {
+      width: 44px;
+      height: 44px;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .top-navbar {
+      padding: 10px 20px;
+      gap: 14px;
+    }
+  
+    .container-profile-top-navbar {
+      width: 36px;
+      height: 36px;
+    }
+  
+    .profile-img-top-navbar {
+      width: 36px;
+      height: 36px;
+    }
+  
+    .profile-dropdown-top-navbar {
+      width: 240px;
+      right: 16px;
+    }
+  
+    .dropdown-avatar-top-navbar {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .dropdown-menu-top-navbar li {
+      font-size: 0.75em;
+    }
+}
+  
+@media screen and (max-width: 480px) {
+    .top-navbar {
+      padding: 8px 12px;
+      gap: 10px;
+    }
+  
+    .container-profile-top-navbar {
+      width: 38px;
+      height: 38px;
+      /* background-color: aquamarine; */
+    }
+  
+    .profile-img-top-navbar {
+      width: 38px;
+      height: 38px;
+    }
+  
+    .profile-dropdown-top-navbar {
+      width: 200px;
+      right: 10px;
+      padding: 12px;
+    }
+  
+    .dropdown-avatar-top-navbar {
+      width: 36px;
+      height: 36px;
+    }
+  
+    .dropdown-email-top-navbar {
+      font-size: 0.75em;
+    }
+  
+    .dropdown-menu-top-navbar li {
+      font-size: 0.75em;
+      padding: 8px 10px;
+    }
+  
+    .menu-icon-top-navbar {
+      font-size: 14px;
+      margin-right: 8px;
+    }
+  
+}
+  

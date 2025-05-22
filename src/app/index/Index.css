@@ -1,0 +1,614 @@
+.container-index {
+    margin-top: 4em;
+    width: 100%;
+    height: calc(100vh - 4em);
+    /* background-color: aqua; */
+}
+
+.section-bg-index {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background-image-index {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-text-index {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 40%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+/*========= Akademik =========*/
+
+.container-akademik {
+    padding: 2rem;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.section-akademik {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    /* background-color: antiquewhite; */
+}
+
+.header-akademik {
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 10vh;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-akademik {
+    font-size: 2.2rem;
+    font-weight: bolder;
+    color: darkcyan;
+}
+
+.card-akademik-wrapper {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.akademik-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 2px solid darkcyan;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    padding: 2rem 1.5rem;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.akademik-card:hover {
+    transform: translateY(-4px);
+}
+
+.icon-wrapper-akademik {
+    background-color: rgb(220, 250, 250);
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.icon-akademik {
+    font-size: 70px;
+    color: darkcyan;
+}
+
+.akademik-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: darkcyan;
+}
+
+.akademik-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/*========= Fakta Pesantren =========*/
+.container-fakta {
+    padding: 2rem;
+    background-color: #f2f9f8;
+    width: 100%;
+}
+  
+.section-fakta {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+  
+.head-fakta {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.tittle-fakta {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: darkcyan;
+}
+  
+.body-fakta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fakta-card {
+    width: 30%;
+    padding: 2rem 1rem;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.fakta-angka {
+    font-size: 3rem;
+    font-weight: bold;
+    color: darkcyan;
+}
+  
+.fakta-label {
+    font-size: 1.1rem;
+    color: #333;
+    text-align: left;
+}
+
+
+/*========= Fasilitas =========*/
+.container-fasilitas {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    width: 100%;
+}
+  
+.section-fasilitas {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+  
+.head-fasilitas {
+    margin-bottom: 2rem;
+}
+  
+.tittle-fasilitas {
+    font-size: 2.2rem;
+    color: darkcyan;
+    font-weight: bold;
+}
+  
+.slider-fasilitas-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+    /* background-color: aquamarine; */
+}
+  
+.slider-button {
+    background-color: darkcyan;
+    border: none;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    z-index: 2;
+    font-size: 30px;
+}
+  
+.card-fasilitas-wrapper {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    width: 100%;
+    /* background-color: bisque; */
+}
+  
+.card-fasilitas-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.card-fasilitas-wrapper.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+}
+  
+  
+.fasilitas-card {
+    flex: 0 0 calc(100% / 3 - 1rem); 
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+  
+.fasilitas-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+  
+.fasilitas-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 51, 51, 0.6);
+    color: #fff;
+    padding: 0.75rem;
+    text-align: center;
+}
+  
+.fasilitas-overlay h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/*========= Kehidupan Pesantren =========*/
+
+.container-kehidupan-pesantren {
+    padding: 2rem;
+    background-color: #fdfdfd;
+    width: 100%;
+}
+  
+.section-kehidupan {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    /* background-color: red; */
+}
+  
+.head-kehidupan {
+    width: 100%;
+    /* background-color: aqua; */
+    margin-bottom: 1rem;
+}
+  
+.tittle-kehidupan {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: darkcyan;
+    margin-bottom: 0.75rem;
+}
+  
+.sub-tittle-kehidupan {
+    font-size: 1rem;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+  
+.card-kehidupan-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+  
+.card-kehidupan {
+    background-color: transparent;
+    border: 2px solid darkcyan;
+    border-radius: 12px;
+    width: 30%;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+  
+.card-kehidupan:hover {
+    transform: translateY(-5px);
+}
+  
+.card-kehidupan img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+  
+.card-kehidupan h3 {
+    font-size: 1.35rem;
+    color: darkcyan;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+  
+.card-kehidupan p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+  
+  
+  
+  
+  
+  
+  
+
+
+
+/* ===== Responsive Style ===== */
+
+@media screen and (max-width: 1024px) {
+    .overlay-text-index {
+      width: 60%;
+      padding: 18px;
+      font-size: 1rem;
+    }
+
+    /*========= Akademik =========*/
+    .akademik-card {
+      width: 44%;
+    }
+  
+    .icon-wrapper-akademik {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .icon-akademik {
+      font-size: 60px;
+    }
+
+    /*========= Fakta Pesantren =========*/
+    .section-fakta {
+        width: 75%;
+    }
+    
+    .fakta-card {
+        width: 47%;
+    }
+    
+    .fakta-angka {
+        font-size: 2.5rem;
+    }
+
+    /*========= Fasilitas =========*/
+    .fasilitas-card {
+        flex: 0 0 calc(100% / 2 - 0.75rem); 
+    }
+
+    /*========= Kehidupan Pesantren =========*/
+    .card-kehidupan {
+        width: 45%;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .container-index {
+      height: auto;
+    }
+  
+    .overlay-text-index {
+      width: 75%;
+      padding: 16px;
+      font-size: 0.95rem;
+      transform: translate(-50%, 0);
+    }
+    
+    /*========= Akademik =========*/
+    .section-akademik {
+      width: 90%;
+    }
+  
+    .akademik-card {
+      width: 40%;
+      padding: 1.5rem;
+    }
+  
+    .icon-wrapper-akademik {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .icon-akademik {
+      font-size: 50px;
+    }
+  
+    .title-akademik {
+      font-size: 1.8rem;
+    }
+  
+    .akademik-card h3 {
+      font-size: 1.1rem;
+    }
+  
+    .akademik-card p {
+      font-size: 0.9rem;
+    }
+
+    /*========= Fakta Pesantren =========*/
+    .section-fakta {
+        width: 82%;
+    }
+    
+    .fakta-card {
+        width: 45%;
+        padding: 1.5rem;
+    }
+    
+    .tittle-fakta {
+        font-size: 1.8rem;
+    }
+    
+    .fakta-angka {
+        font-size: 2.2rem;
+    }
+    
+    .fakta-label {
+        font-size: 1rem;
+    }
+
+    /*========= Fasilitas =========*/
+    .fasilitas-card {
+        flex: 0 0 calc(100% - 1rem);
+    }
+    
+    .slider-button {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+    
+    .tittle-fasilitas {
+        font-size: 1.5rem;
+    }
+
+    /*========= Kehidupan Pesantren =========*/
+    .section-kehidupan {
+        width: 80%;
+    }
+    
+    .card-kehidupan {
+        width: 48%;
+        height: 100%;
+    }
+    
+    .tittle-kehidupan {
+        font-size: 1.8rem;
+    }
+    
+    .sub-tittle-kehidupan {
+        font-size: 0.95rem;
+    }
+    
+    .card-kehidupan h3 {
+        font-size: 1.1rem;
+    }
+    
+    .card-kehidupan p {
+        font-size: 0.95rem;
+    }
+}
+  
+@media screen and (max-width: 480px) {
+    .container-index {
+      height: auto;
+    }
+  
+    .overlay-text-index {
+      width: 80%;
+      padding: 14px;
+      font-size: 0.9rem;
+      transform: translate(-50%, 0);
+    }
+  
+    .overlay-text-index h2 {
+      font-size: 1rem;
+    }
+  
+    .overlay-text-index p {
+      font-size: 0.80rem;
+    }
+    
+    /*========= Akademik =========*/
+    .section-akademik {
+      width: 95%;
+    }
+  
+    .akademik-card {
+      width: 80%;
+      padding: 1.2rem;
+    }
+  
+    .icon-wrapper-akademik {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .icon-akademik {
+      font-size: 40px;
+    }
+  
+    .title-akademik {
+      font-size: 1.6rem;
+    }
+  
+    .akademik-card h3 {
+      font-size: 1rem;
+    }
+  
+    .akademik-card p {
+      font-size: 0.85rem;
+    }
+
+    /*========= Fakta Pesantren =========*/
+    .section-fakta{
+        width: 80%;
+    }
+
+    .fakta-card {
+        width: 95%;
+        flex-direction: column;
+        text-align: center;
+        padding: 1.2rem;
+    }
+
+    .fakta-angka {
+        font-size: 1.8rem;
+    }
+
+    .fakta-label {
+        font-size: 0.95rem;
+    }
+
+    /*========= Fasilitas =========*/
+    .section-fasilitas {
+        width: 95%;
+    }
+    
+    .slider-button {
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+    }
+    
+    .fasilitas-overlay h3 {
+        font-size: 0.9rem;
+    }
+
+    /*========= Kehidupan Pesantren =========*/
+    .section-kehidupan{
+        width: 80%;
+    }
+
+    .card-kehidupan{
+        width: 100%;
+    }
+}
