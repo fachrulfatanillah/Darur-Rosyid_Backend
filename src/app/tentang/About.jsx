@@ -1,4 +1,6 @@
+"use client";
 import './About.css'
+import { useEffect, useState } from "react";
 
 const About = () => {
     return (
@@ -7,6 +9,32 @@ const About = () => {
 }
 
 const Section_About = () => {
+
+    const [about, setAbout] = useState(null);
+    const [missions, setMissions] = useState([]);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+    const fetchAbout = async () => {
+        try {
+        const res = await fetch("/api/about-info");
+        const result = await res.json();
+
+        setAbout(result.about);        // ambil isi about
+        setMissions(result.missions);  // ambil array misi
+        } catch (err) {
+        console.error("Gagal mengambil data about_info", err);
+        } finally {
+        setLoading(false);
+        }
+    };
+
+    fetchAbout();
+    }, []);
+
+    if (loading) return <p>Memuat data kontak...</p>;
+    if (!about) return <p>Data kontak tidak tersedia</p>;
+
     return (
         <section className='section-about'>
             <div className="container-about">
@@ -17,44 +45,44 @@ const Section_About = () => {
                 <div className="about-header">
                     <div className="about-header">
                         <div className="about-left">
-                            <img src="https://suba-arch.com/wp-content/uploads/2021/06/Lumion-10-Pro-%E6%AD%A3%E7%89%88%E6%8E%88%E6%9D%83_12-Photo.jpg" alt="" />
+                            <img src={about.image1Url} alt="" />
                         </div>
                         <div className="about-right">
                             <div className="about-right-top">
-                                <img src="https://www.multidesainarsitek.com/wp-content/uploads/2022/09/REAL-TAMPAK-MI-MAMBAUL-HUDA-2.jpg" alt="" />
+                                <img src={about.image2Url} alt="" />
                             </div>
                             <div className="about-right-bottom">
-                                <img src="https://www.multidesainarsitek.com/wp-content/uploads/2022/09/GEDUNG-KELAS-PONDOK-PESANTREN-1-1038x576.jpg" alt="" />
+                                <img src={about.image3Url} alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="about-main">
                     <div className="about-main-left">
-                        <img src="https://cdnpro.eraspace.com/media/mageplaza/blog/post/p/o/positive-confident-young-caucasian-male-office-worker-wearing-white-formal-shirt-classic-trousers-with-belt-having-happy-facial-expression-keeping-hands-pockets-smiling-joyfully_343059-4600.jpg" alt="" />
+                        <img src={about.image4Url} alt="" />
                     </div>
                     <div className="about-main-right">
                         <div className="about-main-right-title">
-                            <h3>Selamat Datang di Official Website Darur Rosyid</h3>
+                            <h3>{about.heading}</h3>
                         </div>
                         <div className="about-main-right-paragraph">
-                            <p>Pondok Pesantren Darur Rosyid merupakan lembaga pendidikan Islam yang berkomitmen membentuk generasi muda yang berakhlak mulia, berilmu, dan bertakwa. Dengan menggabungkan kurikulum pendidikan formal dan pendidikan pesantren, Darur Rosyid membina santri untuk memiliki kecakapan intelektual sekaligus spiritual. Para santri tidak hanya dibekali dengan ilmu agama seperti tahfidzul Qur’an, fiqih, dan aqidah, tetapi juga diajarkan ilmu pengetahuan umum untuk mempersiapkan mereka menghadapi tantangan zaman. Dengan lingkungan yang kondusif, disiplin, serta didukung oleh tenaga pengajar yang kompeten, pesantren ini menjadi tempat yang ideal untuk menumbuhkan karakter dan potensi generasi penerus bangsa.</p>
-                            <h4>Lorem Ipsum</h4>
-                            <span>Pimpinan Yayasan</span>
+                            <p>{about.description}</p>
+                            <h4>{about.leaderName}</h4>
+                            <span>{about.leaderTitle}</span>
                         </div>
                     </div>
                 </div>
                 <div className="about-vision-mision">
                     <div className="about-vision">
                         <h3>Visi</h3>
-                        <p>Menjadi lembaga pendidikan Islam yang unggul dalam membentuk generasi berakhlak, berilmu, dan bertakwa.</p>
+                        <p>{about.vision}</p>
                     </div>
                     <div className="about-mision">
                         <h3>Misi</h3>
                         <ul>
-                            <li>Mendidik santri dengan ilmu agama dan umum.</li>
-                            <li>Menanamkan nilai-nilai moral dan spiritual.</li>
-                            <li>Mengembangkan potensi dan karakter santri.</li>
+                            {missions.map((misi) => (
+                                <li key={misi.id}>{misi.text}</li>
+                            ))}
                         </ul>
                     </div>
                 </div>

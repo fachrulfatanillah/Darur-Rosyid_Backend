@@ -1,0 +1,577 @@
+/* ==== HEADER SECTION ==== */
+.container-living {
+    margin-top: 4rem;
+    width: 100%;
+    padding: 2rem;
+    background-color: #fdfdfd;
+}
+  
+.section-living {
+    width: 100%;
+    text-align: center;
+}
+  
+.header-living {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-living {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: darkcyan;
+}
+  
+  
+/* ==== FASILITAS UNGGULAN ==== */
+.container-fasilitas-unggulan {
+    width: 100%;
+    padding: 2rem;
+    background-color: #f2f9f8;
+}
+  
+.section-fasilitas-unggulan {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem;
+    /* background-color: aqua; */
+}
+  
+.right-fasilitas-unggulan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 50vh;
+    text-align: center;
+}
+  
+.img-fasilitas-wrapper {
+    width: 100%;
+    height: 100%;
+}
+  
+.img-fasilitas-unggulan {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+}
+  
+.left-fasilitas-unggulan {
+    width: 55%;
+    height: 100%;
+}
+  
+.title-fasilitas-unggulan {
+    font-size: 2rem;
+    font-weight: bold;
+    color: darkcyan;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+  
+.text-fasilitas-unggulan {
+    font-size: 1rem;
+    color: darkcyan;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+/* ==== FASILITAS OLAHRAGA ==== */
+.container-fasilitas-olahraga {
+    width: 100%;
+    padding: 2rem;
+    background-color: darkcyan;
+}
+  
+.section-fasilitas-olahraga {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem;
+    /* background-color: aqua; */
+}
+  
+.left-fasilitas-olahraga {
+    width: 55%;
+    height: 100%;
+}
+
+.title-fasilitas-olahraga {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+  
+.text-fasilitas-olahraga {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.right-fasilitas-olahraga {
+    width: 40%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.img-olahraga-wrapper {
+    width: 100%;
+    height: 100%;
+}
+  
+.img-fasilitas-olahraga {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+}
+
+/* ==== FASILITAS IBADAH ==== */
+.container-fasilitas-ibadah {
+    width: 100%;
+    padding: 2rem;
+    background-color: #f2f9f8;
+}
+  
+.section-fasilitas-ibadah {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem;
+    /* background-color: aqua; */
+}
+  
+.right-fasilitas-ibadah {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 50vh;
+    text-align: center;
+}
+  
+.img-fasilitas-ibadah {
+    width: 100%;
+    height: 100%;
+}
+  
+.img-fasilitas-ibadah {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+}
+  
+.left-fasilitas-ibadah {
+    width: 55%;
+    height: 100%;
+}
+  
+.title-fasilitas-ibadah {
+    font-size: 2rem;
+    font-weight: bold;
+    color: darkcyan;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+  
+.text-fasilitas-ibadah {
+    font-size: 1rem;
+    color: darkcyan;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+/* ==== AKTIVITAS PESANTREN ==== */
+.container-aktivitas-pesantren {
+    width: 100%;
+    padding: 2rem;
+    background-color: #f2f9f8;
+    display: flex;
+    justify-content: center;
+}
+  
+.section-aktivitas {
+    width: 100%;
+    margin: 2rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+  
+.head-aktivitas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.tittle-aktivitas {
+    font-size: 2rem;
+    font-weight: bold;
+    color: darkcyan;
+    text-align: center;
+    text-transform: capitalize;
+}
+  
+.card-wrapper-aktivitas {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+  
+.card-aktivitas {
+    flex: 1 1 calc(33.333% - 2rem); 
+    height: 40vh;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+  
+.card-aktivitas:hover {
+    transform: translateY(-5px);
+}
+  
+.aktivitas-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+  
+.aktivitas-overlay {
+    position: absolute;
+    inset: 0; 
+    background: rgba(0, 51, 51, 0.5);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+}
+  
+.aktivitas-overlay h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+/* ===== RESPONSIVE STYLES ===== */
+  
+@media screen and (max-width: 1024px) {
+    .title-living {
+      font-size: 2rem;
+    }
+    
+    /* ===== Fasilitas Unggulan ===== */
+    .section-fasilitas-unggulan {
+      flex-direction: row;
+      gap: 1.5rem;
+      margin: 1.5rem;
+    }
+  
+    .right-fasilitas-unggulan,
+    .left-fasilitas-unggulan {
+      width: 48%;
+    }
+  
+    .title-fasilitas-unggulan {
+      font-size: 1.8rem;
+    }
+  
+    .text-fasilitas-unggulan {
+      font-size: 0.95rem;
+    }
+
+    /* ===== Fasilitas Olahraga ===== */
+    .section-fasilitas-olahraga {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+    
+    .left-fasilitas-olahraga,
+    .right-fasilitas-olahraga {
+        width: 48%;
+    }
+    
+    .title-fasilitas-olahraga {
+        font-size: 1.8rem;
+    }
+    
+    .text-fasilitas-olahraga {
+        font-size: 0.95rem;
+    }
+
+    /* ===== Fasilitas Ibadah ===== */
+    .section-fasilitas-ibadah {
+        flex-direction: row;
+        gap: 1.5rem;
+        margin: 1.5rem;
+    }
+    
+    .right-fasilitas-ibadah,
+    .left-fasilitas-ibadah {
+        width: 48%;
+    }
+    
+    .title-fasilitas-ibadah {
+        font-size: 1.8rem;
+    }
+    
+    .text-fasilitas-ibadah {
+        font-size: 0.95rem;
+    }
+  
+
+    /* ==== AKTIVITAS PESANTREN ==== */
+    .card-aktivitas {
+        flex: 1 1 calc(50% - 2rem); 
+        height: 35vh;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .title-living {
+      font-size: 1.8rem;
+    }
+
+    /* ===== Fasilitas Unggulan ===== */
+    .container-fasilitas-unggulan {
+      padding: 2rem;
+    }
+  
+    .section-fasilitas-unggulan {
+      flex-direction: column;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+  
+    .right-fasilitas-unggulan,
+    .left-fasilitas-unggulan {
+      width: 90%;
+    }
+  
+    .img-fasilitas-wrapper {
+      width: 100%;
+    }
+  
+    .title-fasilitas-unggulan {
+      font-size: 1.6rem;
+      text-align: center;
+    }
+  
+    .text-fasilitas-unggulan {
+      font-size: 0.9rem;
+      text-align: justify;
+    }
+
+    /* ===== Fasilitas Olahraga ===== */
+    .section-fasilitas-olahraga {
+        flex-direction: column;
+        gap: 2rem;
+        margin: 2rem 0;
+    }
+    
+    .right-fasilitas-olahraga,
+    .left-fasilitas-olahraga {
+      width: 90%;
+    }
+  
+    .img-fasilitas-olahraga {
+      width: 100%;
+    }
+  
+    .title-fasilitas-olahraga {
+      font-size: 1.6rem;
+      text-align: center;
+    }
+  
+    .text-fasilitas-olahraga {
+      font-size: 0.9rem;
+      text-align: justify;
+    }
+
+    /* ===== Fasilitas Ibadah ===== */
+    .container-fasilitas-ibadah {
+        padding: 2rem;
+    }
+    
+    .section-fasilitas-ibadah {
+        flex-direction: column;
+        gap: 2rem;
+        margin: 2rem 0;
+    }
+    
+    .right-fasilitas-ibadah,
+    .left-fasilitas-ibadah {
+        width: 90%;
+    }
+    
+    .img-fasilitas-ibadah {
+        width: 100%;
+    }
+    
+    .title-fasilitas-ibadah {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    
+    .text-fasilitas-ibadah {
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+
+    /* ==== AKTIVITAS PESANTREN ==== */
+    .card-aktivitas {
+        flex: 1 1 calc(50% - 2rem); 
+        height: 30vh;
+    }
+
+    .tittle-aktivitas{
+        margin-bottom: 1rem;
+    }
+}
+  
+
+@media screen and (max-width: 480px) {
+    .container-living,
+    .container-fasilitas-unggulan {
+        padding: 2rem;
+    }
+      
+    .title-living {
+        font-size: 1.5rem;
+    }
+        
+    /* ===== Fasilitas Unggulan ===== */
+    .title-fasilitas-unggulan {
+        font-size: 1.3rem;
+    }
+      
+    .text-fasilitas-unggulan {
+        font-size: 0.9rem;
+        text-align: justify;
+        line-height: 1.5;
+    }
+      
+    .right-fasilitas-unggulan {
+        width: 90%;
+        height: auto; 
+    }
+      
+    .img-fasilitas-wrapper {
+        width: 100%;
+        height: auto;
+    }
+      
+    .img-fasilitas-unggulan {
+        width: 100%;
+        height: auto; 
+        object-fit: contain; 
+    }
+    
+    /* ===== Fasilitas Olahraga ===== */  
+    
+    .title-fasilitas-olahraga {
+        font-size: 1.3rem;
+    }
+      
+    .text-fasilitas-olahraga {
+        font-size: 0.9rem;
+        text-align: justify;
+        line-height: 1.5;
+    }
+      
+    .right-fasilitas-olahraga {
+        width: 90%;
+        height: auto; 
+    }
+      
+    .img-fasilitas-olahraga {
+        width: 100%;
+        height: auto;
+    }
+      
+    .img-fasilitas-olahraga {
+        width: 100%;
+        height: auto; 
+        object-fit: contain; 
+    }
+
+    /* ===== Fasilitas Ibadah ===== */
+    .title-fasilitas-ibadah {
+        font-size: 1.3rem;
+    }
+      
+    .text-fasilitas-ibadah {
+        font-size: 0.9rem;
+        text-align: justify;
+        line-height: 1.5;
+    }
+      
+    .right-fasilitas-ibadah {
+        width: 90%;
+        height: auto; 
+    }
+      
+    .img-fasilitas-ibadah {
+        width: 100%;
+        height: auto;
+    }
+      
+    .img-fasilitas-ibadah {
+        width: 100%;
+        height: auto; 
+        object-fit: contain; 
+    }
+
+    /* ==== AKTIVITAS PESANTREN ==== */
+    .card-aktivitas {
+        flex: 1 1 100%;
+        height: 25vh;
+      }
+    
+      .tittle-aktivitas {
+        font-size: 1.5rem;
+      }
+    
+      .aktivitas-overlay h3 {
+        font-size: 1.2rem;
+      }
+}
+  

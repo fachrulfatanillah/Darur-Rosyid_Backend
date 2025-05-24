@@ -1,0 +1,503 @@
+.container-header-sd {
+    margin-top: 4rem;
+    width: 100%;
+    padding: 2rem;
+    background-color: #fdfdfd;
+}
+  
+.section-header-sd {
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.header-sd {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-title-sd{
+    font-size: 1.2rem;
+    color: darkcyan;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.title-sd {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: darkcyan;
+}
+
+/* ==== Deskripsi SD ==== */
+.container-deskripsi-sd {
+    width: 100%;
+    padding: 2rem;
+    background-color: #f2f9f8;
+}
+
+.section-deskripsi-sd {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    /* background-color: aqua; */
+}
+  
+.right-deskripsi-sd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    height: 70vh;
+    text-align: center;
+}
+  
+.img-deskripsi-sd-wrapper {
+    width: 100%;
+    height: 100%;
+}
+  
+.img-deskripsi-sd {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+}
+  
+.left-deskripsi-sd {
+    width: 30%;
+    height: 100%;
+}
+
+.sub-title-deskripsi-sd{
+    font-size: 1.2rem;
+    color: darkcyan;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.title-deskripsi-sd {
+    font-size: 2rem;
+    font-weight: bold;
+    color: darkcyan;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.sub-title-akreditasi-sd{
+    font-size: 1.1rem;
+    color: darkcyan;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+  
+.text-deskripsi-sd {
+    font-size: 1rem;
+    color: darkcyan;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* ==== Visi Misi ==== */
+.container-visi-misi-sd {
+    width: 100%;
+    padding: 3rem 2rem;
+    background: #fdfdfd;
+    display: flex;
+    justify-content: center;
+}
+  
+.section-visi-misi-sd {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
+}
+  
+.visi-misi-sd-card {
+    background-color: #ffffff;
+    border: 2px solid darkcyan;
+    border-radius: 16px;
+    padding: 2rem;
+    width: 48%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.visi-misi-sd-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+  
+.title-visi-misi-sd {
+    font-size: 1.8rem;
+    color: #009688;
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+  
+.text-visi-sd {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.8;
+    text-align: center;
+}
+  
+.moto-sd-wrapper {
+    margin-top: 2rem;
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+    text-align: center;
+}
+  
+.moto-sd-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #009688;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+}
+  
+.moto-sd-text {
+    font-size: 1rem;
+    color: black;
+    font-style: italic;
+}
+  
+.misi-list-sd {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+  
+.misi-list-sd li {
+    font-size: 1rem;
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+}
+  
+.misi-list-sd li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+  
+.misi-list-sd li span {
+    color: #009688;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* ==== Fasilitas SD ==== */
+.container-fasilitas-sd {
+    padding: 2rem;
+    background-color: #f2f9f8;
+    width: 100%;
+}
+  
+.section-fasilitas-sd {
+    width: 100%;
+    text-align: center;
+}
+  
+.head-fasilitas-sd {
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.tittle-fasilitas-sd {
+    font-size: 2.2rem;
+    color: darkcyan;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+  
+.slider-fasilitas-wrapper-sd {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+  
+.slider-fasilitas-sd-button {
+    background-color: darkcyan;
+    border: none;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    z-index: 2;
+}
+  
+.card-fasilitas-wrapper-sd {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;         
+    -ms-overflow-style: none;     
+    width: 100%;
+}
+  
+.card-fasilitas-wrapper-sd::-webkit-scrollbar {
+    display: none;              
+}
+  
+.card-fasilitas-wrapper-sd.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+}
+  
+.fasilitas-card-sd {
+    flex: 0 0 calc(100% / 3 - 1rem);
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+  
+.fasilitas-img-sd {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+  
+.fasilitas-overlay-sd {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 51, 51, 0.6);
+    color: #fff;
+    padding: 0.75rem;
+    text-align: center;
+}
+  
+.fasilitas-overlay-sd h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+  
+  
+
+/* ==== Responsive Style ==== */
+
+@media screen and (max-width: 1024px) {
+    /* ==== Deskripsi sd ==== */
+    .section-deskripsi-sd {
+      flex-direction: column-reverse;
+      align-items: center;
+      margin: 2rem 0;
+    }
+  
+    .left-deskripsi-sd {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .right-deskripsi-sd {
+      width: 100%;
+      height: 50vh;
+      margin-bottom: 2rem;
+    }
+  
+    /* ==== Visi Misi sd ==== */
+    .visi-misi-sd-card {
+      width: 100%;
+    }
+  
+    /* ==== Fasilitas sd ==== */
+    .fasilitas-card-sd {
+      flex: 0 0 calc(100% / 2 - 1rem);
+    }
+  
+    .tittle-fasilitas-sd {
+      font-size: 2rem;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    /* ==== Header ==== */
+    .title-sd {
+      font-size: 2.5rem;
+    }
+  
+    /* ==== Deskripsi sd ==== */
+    .title-deskripsi-sd {
+      font-size: 1.8rem;
+    }
+  
+    .sub-title-deskripsi-sd,
+    .sub-title-akreditasi-sd {
+      font-size: 1rem;
+    }
+  
+    .text-deskripsi-sd {
+      font-size: 0.95rem;
+    }
+  
+    .right-deskripsi-sd {
+      height: 40vh;
+    }
+  
+    /* ==== Visi Misi sd ==== */
+    .container-visi-misi-sd {
+      padding: 2.5rem 1.5rem;
+    }
+  
+    .title-visi-misi-sd {
+      font-size: 1.6rem;
+    }
+  
+    .moto-sd-title {
+      font-size: 1.5rem;
+    }
+  
+    .text-visi-sd,
+    .moto-sd-text,
+    .misi-list-sd li {
+      font-size: 0.95rem;
+    }
+  
+    .misi-list-sd li span {
+      font-size: 1.1rem;
+    }
+  
+    /* ==== Fasilitas sd ==== */
+    .fasilitas-card-sd {
+      flex: 0 0 calc(100% / 2 - 1rem);
+    }
+  
+    .slider-fasilitas-sd-button {
+      width: 40px;
+      height: 40px;
+      font-size: 24px;
+    }
+  
+    .tittle-fasilitas-sd {
+      font-size: 1.75rem;
+    }
+  
+    .fasilitas-overlay-sd h3 {
+      font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* ==== Header ==== */
+    .title-sd {
+      font-size: 2rem;
+    }
+  
+    .sub-title-sd {
+      font-size: 1rem;
+    }
+  
+    .section-header-sd {
+      height: auto;
+      padding: 1rem 0;
+    }
+  
+    /* ==== Deskripsi sd ==== */
+    .container-deskripsi-sd {
+      padding: 1rem;
+    }
+  
+    .title-deskripsi-sd {
+      font-size: 1.5rem;
+    }
+  
+    .sub-title-deskripsi-sd,
+    .sub-title-akreditasi-sd {
+      font-size: 0.95rem;
+    }
+  
+    .text-deskripsi-sd {
+      font-size: 0.9rem;
+    }
+  
+    .right-deskripsi-sd {
+      height: 30vh;
+    }
+  
+    /* ==== Visi Misi sd ==== */
+    .container-visi-misi-sd {
+      padding: 2rem 1rem;
+    }
+  
+    .visi-misi-sd-card {
+      padding: 1.5rem;
+    }
+  
+    .title-visi-misi-sd {
+      font-size: 1.4rem;
+    }
+  
+    .moto-sd-title {
+      font-size: 1.3rem;
+    }
+  
+    .text-visi-sd,
+    .moto-sd-text {
+      text-align: center;
+    }
+  
+    .misi-list-sd li {
+      font-size: 0.9rem;
+      text-align: left;
+    }
+  
+    .misi-list-sd li span {
+      font-size: 1rem;
+    }
+  
+    /* ==== Fasilitas sd ==== */
+    .fasilitas-card-sd {
+      flex: 0 0 97%;
+    }
+  
+    .slider-fasilitas-wrapper-sd {
+      gap: 0.5rem;
+    }
+  
+    .slider-fasilitas-sd-button {
+      width: 35px;
+      height: 35px;
+      font-size: 20px;
+    }
+  
+    .tittle-fasilitas-sd {
+      font-size: 1.5rem;
+    }
+  
+    .fasilitas-overlay-sd h3 {
+      font-size: 0.9rem;
+    }
+}
+    
+  

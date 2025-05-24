@@ -54,14 +54,14 @@ export default function Navbar() {
                         </span>
                         {(isMobile ? subMenuOpen : true) && (
                         <ul className="submenu">
-                            <li><Link href="" className="submenu-link" onClick={() => setMenuOpen(false)}>SD</Link></li>
-                            <li><Link href="" className="submenu-link" onClick={() => setMenuOpen(false)}>SMP</Link></li>
-                            <li><Link href="" className="submenu-link" onClick={() => setMenuOpen(false)}>SMA</Link></li>
+                            <li><Link href="/akademik/sd" className="submenu-link" onClick={() => setMenuOpen(false)}>SD</Link></li>
+                            <li><Link href="/akademik/smp" className="submenu-link" onClick={() => setMenuOpen(false)}>SMP</Link></li>
+                            <li><Link href="/akademik/sma" className="submenu-link" onClick={() => setMenuOpen(false)}>SMA</Link></li>
                         </ul>
                         )}
                     </li>
-                    <li><Link href="" className="link" onClick={() => setMenuOpen(false)}>Kehidupan Pesantren</Link></li>
-                    <li><Link href="" className="link" onClick={() => setMenuOpen(false)}>Kontak</Link></li>
+                    <li><Link href="/kehidupan-pesantren" className="link" onClick={() => setMenuOpen(false)}>Kehidupan Pesantren</Link></li>
+                    <li><Link href="/kontak" className="link" onClick={() => setMenuOpen(false)}>Kontak</Link></li>
                 </ul>
             </div>
         </nav>

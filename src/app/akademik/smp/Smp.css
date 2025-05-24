@@ -1,0 +1,502 @@
+.container-header-smp {
+    margin-top: 4rem;
+    width: 100%;
+    padding: 2rem;
+    background-color: #fdfdfd;
+}
+  
+.section-header-smp {
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.header-smp {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-title-smp{
+    font-size: 1.2rem;
+    color: darkcyan;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.title-smp {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: darkcyan;
+}
+
+/* ==== Deskripsi smp ==== */
+.container-deskripsi-smp {
+    width: 100%;
+    padding: 2rem;
+    background-color: #f2f9f8;
+}
+
+.section-deskripsi-smp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    /* background-color: aqua; */
+}
+  
+.right-deskripsi-smp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    height: 70vh;
+    text-align: center;
+}
+  
+.img-deskripsi-smp-wrapper {
+    width: 100%;
+    height: 100%;
+}
+  
+.img-deskripsi-smp {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+}
+  
+.left-deskripsi-smp {
+    width: 30%;
+    height: 100%;
+}
+
+.sub-title-deskripsi-smp{
+    font-size: 1.2rem;
+    color: darkcyan;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.title-deskripsi-smp {
+    font-size: 2rem;
+    font-weight: bold;
+    color: darkcyan;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.sub-title-akreditasi-smp{
+    font-size: 1.1rem;
+    color: darkcyan;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+  
+.text-deskripsi-smp {
+    font-size: 1rem;
+    color: darkcyan;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* ==== Visi Misi ==== */
+.container-visi-misi-smp {
+    width: 100%;
+    padding: 3rem 2rem;
+    background: #fdfdfd;
+    display: flex;
+    justify-content: center;
+}
+  
+.section-visi-misi-smp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
+}
+  
+.visi-misi-smp-card {
+    background-color: #ffffff;
+    border: 2px solid darkcyan;
+    border-radius: 16px;
+    padding: 2rem;
+    width: 48%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.visi-misi-smp-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+  
+.title-visi-misi-smp {
+    font-size: 1.8rem;
+    color: #009688;
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+  
+.text-visi-smp {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.8;
+    text-align: center;
+}
+  
+.moto-smp-wrapper {
+    margin-top: 2rem;
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+    text-align: center;
+}
+  
+.moto-smp-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #009688;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+}
+  
+.moto-smp-text {
+    font-size: 1rem;
+    color: black;
+    font-style: italic;
+}
+  
+.misi-list-smp {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+  
+.misi-list-smp li {
+    font-size: 1rem;
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+}
+  
+.misi-list-smp li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+  
+.misi-list-smp li span {
+    color: #009688;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* ==== Fasilitas Smp ==== */
+.container-fasilitas-smp {
+    padding: 2rem;
+    background-color: #f2f9f8;
+    width: 100%;
+}
+  
+.section-fasilitas-smp {
+    width: 100%;
+    text-align: center;
+}
+  
+.head-fasilitas-smp {
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.tittle-fasilitas-smp {
+    font-size: 2.2rem;
+    color: darkcyan;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+  
+.slider-fasilitas-wrapper-smp {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+  
+.slider-fasilitas-smp-button {
+    background-color: darkcyan;
+    border: none;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    z-index: 2;
+}
+  
+.card-fasilitas-wrapper-smp {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;         
+    -ms-overflow-style: none;     
+    width: 100%;
+}
+  
+.card-fasilitas-wrapper-smp::-webkit-scrollbar {
+    display: none;              
+}
+  
+.card-fasilitas-wrapper-smp.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+}
+  
+.fasilitas-card-smp {
+    flex: 0 0 calc(100% / 3 - 1rem);
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+  
+.fasilitas-img-smp {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+  
+.fasilitas-overlay-smp {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 51, 51, 0.6);
+    color: #fff;
+    padding: 0.75rem;
+    text-align: center;
+}
+  
+.fasilitas-overlay-smp h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+  
+  
+
+/* ==== Responsive Style ==== */
+
+@media screen and (max-width: 1024px) {
+    /* ==== Deskripsi SMP ==== */
+    .section-deskripsi-smp {
+      flex-direction: column-reverse;
+      align-items: center;
+      margin: 2rem 0;
+    }
+  
+    .left-deskripsi-smp {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .right-deskripsi-smp {
+      width: 100%;
+      height: 50vh;
+      margin-bottom: 2rem;
+    }
+  
+    /* ==== Visi Misi SMP ==== */
+    .visi-misi-smp-card {
+      width: 100%;
+    }
+  
+    /* ==== Fasilitas SMP ==== */
+    .fasilitas-card-smp {
+      flex: 0 0 calc(100% / 2 - 1rem);
+    }
+  
+    .tittle-fasilitas-smp {
+      font-size: 2rem;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    /* ==== Header ==== */
+    .title-smp {
+      font-size: 2.5rem;
+    }
+  
+    /* ==== Deskripsi SMP ==== */
+    .title-deskripsi-smp {
+      font-size: 1.8rem;
+    }
+  
+    .sub-title-deskripsi-smp,
+    .sub-title-akreditasi-smp {
+      font-size: 1rem;
+    }
+  
+    .text-deskripsi-smp {
+      font-size: 0.95rem;
+    }
+  
+    .right-deskripsi-smp {
+      height: 40vh;
+    }
+  
+    /* ==== Visi Misi SMP ==== */
+    .container-visi-misi-smp {
+      padding: 2.5rem 1.5rem;
+    }
+  
+    .title-visi-misi-smp {
+      font-size: 1.6rem;
+    }
+  
+    .moto-smp-title {
+      font-size: 1.5rem;
+    }
+  
+    .text-visi-smp,
+    .moto-smp-text,
+    .misi-list-smp li {
+      font-size: 0.95rem;
+    }
+  
+    .misi-list-smp li span {
+      font-size: 1.1rem;
+    }
+  
+    /* ==== Fasilitas SMP ==== */
+    .fasilitas-card-smp {
+      flex: 0 0 calc(100% / 2 - 1rem);
+    }
+  
+    .slider-fasilitas-smp-button {
+      width: 40px;
+      height: 40px;
+      font-size: 24px;
+    }
+  
+    .tittle-fasilitas-smp {
+      font-size: 1.75rem;
+    }
+  
+    .fasilitas-overlay-smp h3 {
+      font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* ==== Header ==== */
+    .title-smp {
+      font-size: 2rem;
+    }
+  
+    .sub-title-smp {
+      font-size: 1rem;
+    }
+  
+    .section-header-smp {
+      height: auto;
+      padding: 1rem 0;
+    }
+  
+    /* ==== Deskripsi SMP ==== */
+    .container-deskripsi-smp {
+      padding: 1rem;
+    }
+  
+    .title-deskripsi-smp {
+      font-size: 1.5rem;
+    }
+  
+    .sub-title-deskripsi-smp,
+    .sub-title-akreditasi-smp {
+      font-size: 0.95rem;
+    }
+  
+    .text-deskripsi-smp {
+      font-size: 0.9rem;
+    }
+  
+    .right-deskripsi-smp {
+      height: 30vh;
+    }
+  
+    /* ==== Visi Misi SMP ==== */
+    .container-visi-misi-smp {
+      padding: 2rem 1rem;
+    }
+  
+    .visi-misi-smp-card {
+      padding: 1.5rem;
+    }
+  
+    .title-visi-misi-smp {
+      font-size: 1.4rem;
+    }
+  
+    .moto-smp-title {
+      font-size: 1.3rem;
+    }
+  
+    .text-visi-smp,
+    .moto-smp-text {
+      text-align: center;
+    }
+  
+    .misi-list-smp li {
+      font-size: 0.9rem;
+      text-align: left;
+    }
+  
+    .misi-list-smp li span {
+      font-size: 1rem;
+    }
+  
+    /* ==== Fasilitas SMP ==== */
+    .fasilitas-card-smp {
+      flex: 0 0 97%;
+    }
+  
+    .slider-fasilitas-wrapper-smp {
+      gap: 0.5rem;
+    }
+  
+    .slider-fasilitas-smp-button {
+      width: 35px;
+      height: 35px;
+      font-size: 20px;
+    }
+  
+    .tittle-fasilitas-smp {
+      font-size: 1.5rem;
+    }
+  
+    .fasilitas-overlay-smp h3 {
+      font-size: 0.9rem;
+    }
+}
+    

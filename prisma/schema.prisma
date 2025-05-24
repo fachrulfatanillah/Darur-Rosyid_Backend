@@ -23,3 +23,97 @@ model users {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
+
+model contact_info {
+  id           Int      @id
+  phone        String
+  whatsapp     String
+  email        String
+  address      String
+  bannerUrl    String
+  bannerText   String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@map("contact_info")
+}
+
+model about_info {
+  id            Int      @id
+  heading       String
+  description   String
+  leaderName    String
+  leaderTitle   String
+  vision        String
+  image1Url     String
+  image2Url     String
+  image3Url     String
+  image4Url     String
+
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@map("about_info")
+}
+
+model about_mission { 
+  id        Int      @id @default(autoincrement())
+  text      String 
+  createdAt DateTime @default(now())
+
+  @@map("about_mission")
+}
+
+model living_info {
+  id         Int      @id @default(autoincrement())
+  title      String
+  paragraph  String
+  imageUrl   String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@map("living_info")
+}
+
+model living_info_activity {
+  id        Int      @id @default(autoincrement())
+  imageUrl  String
+  title     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("living_info_activity")
+}
+
+model academic_info_sd {
+  id         Int      @id
+  title      String
+  subTitle   String
+  paragraph  String
+  imageUrl   String
+  vision     String
+  moto       String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@map("academic_info_sd")
+}
+
+model academic_info_sd_activity {
+  id        Int      @id @default(autoincrement())
+  imageUrl  String
+  title     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("academic_info_sd_activity")
+}
+
+model academic_info_sd_mission {
+  id        Int      @id @default(autoincrement())
+  text      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("academic_info_sd_mission")
+}

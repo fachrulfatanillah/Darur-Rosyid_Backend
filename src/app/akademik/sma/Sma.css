@@ -1,0 +1,502 @@
+.container-header-sma {
+    margin-top: 4rem;
+    width: 100%;
+    padding: 2rem;
+    background-color: #fdfdfd;
+}
+  
+.section-header-sma {
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.header-sma {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-title-sma{
+    font-size: 1.2rem;
+    color: darkcyan;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.title-sma {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: darkcyan;
+}
+
+/* ==== Deskripsi sma ==== */
+.container-deskripsi-sma {
+    width: 100%;
+    padding: 2rem;
+    background-color: #f2f9f8;
+}
+
+.section-deskripsi-sma {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    /* background-color: aqua; */
+}
+  
+.right-deskripsi-sma {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    height: 70vh;
+    text-align: center;
+}
+  
+.img-deskripsi-sma-wrapper {
+    width: 100%;
+    height: 100%;
+}
+  
+.img-deskripsi-sma {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+}
+  
+.left-deskripsi-sma {
+    width: 30%;
+    height: 100%;
+}
+
+.sub-title-deskripsi-sma{
+    font-size: 1.2rem;
+    color: darkcyan;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.title-deskripsi-sma {
+    font-size: 2rem;
+    font-weight: bold;
+    color: darkcyan;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.sub-title-akreditasi-sma{
+    font-size: 1.1rem;
+    color: darkcyan;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+  
+.text-deskripsi-sma {
+    font-size: 1rem;
+    color: darkcyan;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* ==== Visi Misi ==== */
+.container-visi-misi-sma {
+    width: 100%;
+    padding: 3rem 2rem;
+    background: #fdfdfd;
+    display: flex;
+    justify-content: center;
+}
+  
+.section-visi-misi-sma {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
+}
+  
+.visi-misi-sma-card {
+    background-color: #ffffff;
+    border: 2px solid darkcyan;
+    border-radius: 16px;
+    padding: 2rem;
+    width: 48%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.visi-misi-sma-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+  
+.title-visi-misi-sma {
+    font-size: 1.8rem;
+    color: #009688;
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+  
+.text-visi-sma {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.8;
+    text-align: center;
+}
+  
+.moto-sma-wrapper {
+    margin-top: 2rem;
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+    text-align: center;
+}
+  
+.moto-sma-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #009688;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+}
+  
+.moto-sma-text {
+    font-size: 1rem;
+    color: black;
+    font-style: italic;
+}
+  
+.misi-list-sma {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+  
+.misi-list-sma li {
+    font-size: 1rem;
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+}
+  
+.misi-list-sma li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+  
+.misi-list-sma li span {
+    color: #009688;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* ==== Fasilitas sma ==== */
+.container-fasilitas-sma {
+    padding: 2rem;
+    background-color: #f2f9f8;
+    width: 100%;
+}
+  
+.section-fasilitas-sma {
+    width: 100%;
+    text-align: center;
+}
+  
+.head-fasilitas-sma {
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.tittle-fasilitas-sma {
+    font-size: 2.2rem;
+    color: darkcyan;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+  
+.slider-fasilitas-wrapper-sma {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+  
+.slider-fasilitas-sma-button {
+    background-color: darkcyan;
+    border: none;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    z-index: 2;
+}
+  
+.card-fasilitas-wrapper-sma {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;         
+    -ms-overflow-style: none;     
+    width: 100%;
+}
+  
+.card-fasilitas-wrapper-sma::-webkit-scrollbar {
+    display: none;              
+}
+  
+.card-fasilitas-wrapper-sma.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+}
+  
+.fasilitas-card-sma {
+    flex: 0 0 calc(100% / 3 - 1rem);
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+  
+.fasilitas-img-sma {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+  
+.fasilitas-overlay-sma {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 51, 51, 0.6);
+    color: #fff;
+    padding: 0.75rem;
+    text-align: center;
+}
+  
+.fasilitas-overlay-sma h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+  
+  
+
+/* ==== Responsive Style ==== */
+
+@media screen and (max-width: 1024px) {
+    /* ==== Deskripsi sma ==== */
+    .section-deskripsi-sma {
+      flex-direction: column-reverse;
+      align-items: center;
+      margin: 2rem 0;
+    }
+  
+    .left-deskripsi-sma {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .right-deskripsi-sma {
+      width: 100%;
+      height: 50vh;
+      margin-bottom: 2rem;
+    }
+  
+    /* ==== Visi Misi sma ==== */
+    .visi-misi-sma-card {
+      width: 100%;
+    }
+  
+    /* ==== Fasilitas sma ==== */
+    .fasilitas-card-sma {
+      flex: 0 0 calc(100% / 2 - 1rem);
+    }
+  
+    .tittle-fasilitas-sma {
+      font-size: 2rem;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    /* ==== Header ==== */
+    .title-sma {
+      font-size: 2.5rem;
+    }
+  
+    /* ==== Deskripsi sma ==== */
+    .title-deskripsi-sma {
+      font-size: 1.8rem;
+    }
+  
+    .sub-title-deskripsi-sma,
+    .sub-title-akreditasi-sma {
+      font-size: 1rem;
+    }
+  
+    .text-deskripsi-sma {
+      font-size: 0.95rem;
+    }
+  
+    .right-deskripsi-sma {
+      height: 40vh;
+    }
+  
+    /* ==== Visi Misi sma ==== */
+    .container-visi-misi-sma {
+      padding: 2.5rem 1.5rem;
+    }
+  
+    .title-visi-misi-sma {
+      font-size: 1.6rem;
+    }
+  
+    .moto-sma-title {
+      font-size: 1.5rem;
+    }
+  
+    .text-visi-sma,
+    .moto-sma-text,
+    .misi-list-sma li {
+      font-size: 0.95rem;
+    }
+  
+    .misi-list-sma li span {
+      font-size: 1.1rem;
+    }
+  
+    /* ==== Fasilitas sma ==== */
+    .fasilitas-card-sma {
+      flex: 0 0 calc(100% / 2 - 1rem);
+    }
+  
+    .slider-fasilitas-sma-button {
+      width: 40px;
+      height: 40px;
+      font-size: 24px;
+    }
+  
+    .tittle-fasilitas-sma {
+      font-size: 1.75rem;
+    }
+  
+    .fasilitas-overlay-sma h3 {
+      font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* ==== Header ==== */
+    .title-sma {
+      font-size: 2rem;
+    }
+  
+    .sub-title-sma {
+      font-size: 1rem;
+    }
+  
+    .section-header-sma {
+      height: auto;
+      padding: 1rem 0;
+    }
+  
+    /* ==== Deskripsi sma ==== */
+    .container-deskripsi-sma {
+      padding: 1rem;
+    }
+  
+    .title-deskripsi-sma {
+      font-size: 1.5rem;
+    }
+  
+    .sub-title-deskripsi-sma,
+    .sub-title-akreditasi-sma {
+      font-size: 0.95rem;
+    }
+  
+    .text-deskripsi-sma {
+      font-size: 0.9rem;
+    }
+  
+    .right-deskripsi-sma {
+      height: 30vh;
+    }
+  
+    /* ==== Visi Misi sma ==== */
+    .container-visi-misi-sma {
+      padding: 2rem 1rem;
+    }
+  
+    .visi-misi-sma-card {
+      padding: 1.5rem;
+    }
+  
+    .title-visi-misi-sma {
+      font-size: 1.4rem;
+    }
+  
+    .moto-sma-title {
+      font-size: 1.3rem;
+    }
+  
+    .text-visi-sma,
+    .moto-sma-text {
+      text-align: center;
+    }
+  
+    .misi-list-sma li {
+      font-size: 0.9rem;
+      text-align: left;
+    }
+  
+    .misi-list-sma li span {
+      font-size: 1rem;
+    }
+  
+    /* ==== Fasilitas sma ==== */
+    .fasilitas-card-sma {
+      flex: 0 0 97%;
+    }
+  
+    .slider-fasilitas-wrapper-sma {
+      gap: 0.5rem;
+    }
+  
+    .slider-fasilitas-sma-button {
+      width: 35px;
+      height: 35px;
+      font-size: 20px;
+    }
+  
+    .tittle-fasilitas-sma {
+      font-size: 1.5rem;
+    }
+  
+    .fasilitas-overlay-sma h3 {
+      font-size: 0.9rem;
+    }
+}
+    
