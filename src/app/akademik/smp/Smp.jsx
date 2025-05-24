@@ -107,38 +107,10 @@ const Container_Smp = () => {
           slider.removeEventListener("touchmove", handleTouchMove);
           slider.removeEventListener("touchend", handleTouchEnd);
         };
-      }, []);
+    }, []);
 
-        if (loading) return <p>Memuat data SMP...</p>;
-        if (!dataAcademicSmp) return <p>Data SMP tidak tersedia.</p>;
-    
-      const fasilitassmpData = [
-        {
-          src: "/images/akademik/smp/fasilitas-smp/lapangan-dummy.webp",
-          alt: "Lapangan Bermain",
-          title: "Lapangan Bermain",
-        },
-        {
-          src: "/images/akademik/smp/fasilitas-smp/kelas-dummy.webp",
-          alt: "Kelas Interaktif",
-          title: "Kelas Interaktif",
-        },
-        {
-          src: "/images/akademik/smp/fasilitas-smp/perpustakaan-dummy.webp",
-          alt: "Perpustakaan Mini",
-          title: "Perpustakaan Mini",
-        },
-        {
-          src: "/images/akademik/smp/fasilitas-smp/ruang-musik-dummy.webp",
-          alt: "Ruang Musik",
-          title: "Ruang Musik & Seni",
-        },
-        {
-          src: "/images/akademik/smp/fasilitas-smp/laboratorium-dummy.webp",
-          alt: "Lab Komputer Anak",
-          title: "Lab Komputer Anak",
-        },
-    ];
+    if (loading) return <p>Memuat data SMP...</p>;
+    if (!dataAcademicSmp) return <p>Data SMP tidak tersedia.</p>;
     
     return (
         <>
