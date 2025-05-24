@@ -3,7 +3,7 @@
 
 import './Smp.css'
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 
 
 const Sekolah_Menengah_Pertama = () => {
@@ -16,6 +16,30 @@ const Sekolah_Menengah_Pertama = () => {
 const Container_Smp = () => {
     
     const sliderRef = useRef(null);
+    const [dataAcademicSmp, setDataAcademicSmp] = useState(null);
+    const [dataActivitiesSmp, setDataActivitiesSmp] = useState([]);
+    const [dataMissionsSmp, setDataMissionsSmp] = useState([]);
+    const [loading, setLoading] = useState(true);
+
+    // Fetch API academic-info-sd
+    useEffect(() => {
+    const fetchAcademicInfo = async () => {
+        try {
+        const res = await fetch("/api/academic/smp");
+        const result = await res.json();
+
+        setDataAcademicSmp(result.academicInfo);
+        setDataActivitiesSmp(result.activities);
+        setDataMissionsSmp(result.missions);
+        } catch (error) {
+        console.error("Gagal mengambil data academic_info_sd", error);
+        } finally {
+        setLoading(false);
+        }
+    };
+
+    fetchAcademicInfo();
+    }, []);
 
     const scrollByCard = (direction) => {
         const slider = sliderRef.current;
@@ -84,6 +108,9 @@ const Container_Smp = () => {
           slider.removeEventListener("touchend", handleTouchEnd);
         };
       }, []);
+
+        if (loading) return <p>Memuat data SMP...</p>;
+        if (!dataAcademicSmp) return <p>Data SMP tidak tersedia.</p>;
     
       const fasilitassmpData = [
         {
@@ -131,23 +158,18 @@ const Container_Smp = () => {
                     <div className="left-deskripsi-smp">
                         <div className="top-head-deskripsi-smp">
                             <p className="sub-title-deskripsi-smp">Selamat Datang di</p>
-                            <h2 className="title-deskripsi-smp">SMPIT DARUR ROSYID</h2>
-                            <p className="sub-title-akreditasi-smp">TERAKREDITASI B</p>
+                            <h2 className="title-deskripsi-smp">{dataAcademicSmp.title}</h2>
+                            <p className="sub-title-akreditasi-smp">{dataAcademicSmp.subTitle}</p>
                         </div>
                         <div className="bottom-deskripsi-smp">
-                            <p className="text-deskripsi-smp">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus blanditiis aut, excepturi, quo distinctio ipsum rem iure iusto quidem eos totam exercitationem porro eveniet reprehenderit corrupti pariatur perferendis esse recusandae?
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus blanditiis aut, excepturi, quo distinctio ipsum rem iure iusto quidem eos totam exercitationem porro eveniet reprehenderit corrupti pariatur perferendis esse recusandae?
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus blanditiis aut, excepturi, quo distinctio ipsum rem iure iusto quidem eos totam exercitationem porro eveniet reprehenderit corrupti pariatur perferendis esse recusandae?
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus blanditiis aut, excepturi, quo distinctio ipsum rem iure iusto quidem eos totam exercitationem porro eveniet reprehenderit corrupti pariatur perferendis esse recusandae?
-                            </p>
+                            <p className="text-deskripsi-smp">{dataAcademicSmp.paragraph}</p>
                         </div>
                     </div>
                     <div className="right-deskripsi-smp">
                         <div className="img-deskripsi-smp-wrapper">
                             <img
-                            src="/images/akademik/smp/deskripsi-smp/smp.webp"
-                            alt="deskripsi-smp"
+                            src={dataAcademicSmp.imageUrl}
+                            alt={dataAcademicSmp.title}
                             className="img-deskripsi-smp"
                             />
                         </div>
@@ -160,22 +182,18 @@ const Container_Smp = () => {
                 <div className="section-visi-misi-smp">
                     <div className="visi-misi-smp-card">
                         <h3 className="title-visi-misi-smp">Visi</h3>
-                        <p className="text-visi-smp">
-                            Menjadi lembaga pendidikan dasar yang unggul dalam membentuk karakter islami, cerdas, dan berwawasan global.
-                        </p>
+                        <p className="text-visi-smp">{dataAcademicSmp.vision}</p>
                         <div className="moto-smp-wrapper">
                             <h4 className="moto-smp-title">Moto</h4>
-                            <p className="moto-smp-text">"Belajar dengan Iman, Tumbuh dengan Ilmu, Berkarya dengan Akhlak"</p>
+                            <p className="moto-smp-text">{dataAcademicSmp.moto}</p>
                         </div>
                     </div>
                     <div className="visi-misi-smp-card">
                         <h3 className="title-visi-misi-smp">Misi</h3>
                         <ul className="misi-list-smp">
-                            <li><span>✔</span> Menanamkan nilai-nilai keislaman sejak dini.</li>
-                            <li><span>✔</span> Meningkatkan kompetensi akademik dan non-akademik siswa.</li>
-                            <li><span>✔</span> Mendorong kreativitas dan keterampilan abad 21.</li>
-                            <li><span>✔</span> Mewujudkan lingkungan belajar yang aman dan menyenangkan.</li>
-                            <li><span>✔</span> Menjalin kerjasama antara sekolah, orang tua, dan masyarakat.</li>
+                            {dataMissionsSmp.map((mission) => (
+                                <li key={mission.id}><span>✔</span>{mission.text}</li>
+                            ))}    
                         </ul>
                     </div>
                 </div>
@@ -194,11 +212,11 @@ const Container_Smp = () => {
                         </button>
 
                         <div className="card-fasilitas-wrapper-smp" ref={sliderRef}>
-                            {fasilitassmpData.map((item, index) => (
-                            <div key={index} className="fasilitas-card-smp">
-                                <img src={item.src} alt={item.alt} className="fasilitas-img-smp" />
+                            {dataActivitiesSmp.map((activity) => (
+                            <div key={activity.id} className="fasilitas-card-smp">
+                                <img src={activity.imageUrl} alt={activity.title} className="fasilitas-img-smp" />
                                 <div className="fasilitas-overlay-smp">
-                                <h3>{item.title}</h3>
+                                <h3>{activity.title}</h3>
                                 </div>
                             </div>
                             ))}

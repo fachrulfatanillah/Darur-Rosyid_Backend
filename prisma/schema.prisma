@@ -117,3 +117,36 @@ model academic_info_sd_mission {
 
   @@map("academic_info_sd_mission")
 }
+
+model academic_info_smp {
+  id         Int      @id
+  title      String
+  subTitle   String
+  paragraph  String
+  imageUrl   String
+  vision     String
+  moto       String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@map("academic_info_smp")
+}
+
+model academic_info_smp_mission {
+  id        Int      @id @default(autoincrement())
+  text      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("academic_info_smp_mission")
+}
+
+model academic_info_smp_activity {
+  id        Int      @id @default(autoincrement())
+  imageUrl  String
+  title     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("academic_info_smp_activity")
+}
