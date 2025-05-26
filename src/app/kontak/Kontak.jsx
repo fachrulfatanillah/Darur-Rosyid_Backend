@@ -12,7 +12,7 @@ const Kontak = () => {
 
 const Container_Kontak = () => {
 
-    const [data, setData] = useState(null);
+    const [dataKontak, setDataKontak] = useState(null);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -20,9 +20,9 @@ const Container_Kontak = () => {
         try {
             const res = await fetch("/api/contact-info");
             const result = await res.json();
-            setData(result);
+            setDataKontak(result);
         } catch (err) {
-            console.error("Gagal memuat data contact_info", err);
+            console.error("Gagal memuat dataKontak contact_info", err);
         } finally {
             setLoading(false);
         }
@@ -35,18 +35,18 @@ const Container_Kontak = () => {
         return <p>Loading...</p>;
     }
 
-    if (!data) {
-        return <p>Data tidak tersedia</p>;
+    if (!dataKontak) {
+        return <p>DataKontak tidak tersedia</p>;
     }
     
     return(
         <>
             <div className="container-header-kontak">
                 <div className="section-header-kontak">
-                    <img src={data.bannerUrl} alt="Banner" className="background-image-header-kontak" />
+                    <img src={dataKontak.bannerUrl} alt="Banner" className="background-image-header-kontak" />
                     <div className="overlay-text-header-kontak">
                         <h2>Kontak</h2>
-                        <p>{data.bannerText}</p>
+                        <p>{dataKontak.bannerText}</p>
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@ const Container_Kontak = () => {
                                 href="tel:0221234567" 
                                 className="kontak-link"
                             >   
-                                {data.phone}
+                                {dataKontak.phone}
                             </a>
                         </div>
 
@@ -84,7 +84,7 @@ const Container_Kontak = () => {
                                 rel="noopener noreferrer"
                                 className="kontak-link"
                             >
-                                {data.whatsapp}
+                                {dataKontak.whatsapp}
                             </a>
                         </div>
 
@@ -97,7 +97,7 @@ const Container_Kontak = () => {
                                 href="mailto:akademik@pondok.sch.id"
                                 className="kontak-link"
                             >
-                                {data.email}
+                                {dataKontak.email}
                             </a>
                         </div>
                     </div>
@@ -115,7 +115,7 @@ const Container_Kontak = () => {
                         <div className="alamat-card">
                             <h3>Pondok Pesantren darur rosyid</h3>
                             <p>
-                                {data.address}
+                                {dataKontak.address}
                             </p>
                         </div>
                     </div>

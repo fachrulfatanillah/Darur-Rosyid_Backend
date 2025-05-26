@@ -1,7 +1,8 @@
 'use client';
 import "./Sidebar.css";
 import { useState, useEffect, useRef  } from "react";
-import { FaChevronDown, FaChartPie, FaClipboardList, FaHome } from "react-icons/fa";
+import { FaChevronDown, FaChartPie, FaSchool , FaHome, FaMosque  } from "react-icons/fa";
+import { RiContactsBook2Fill, RiInformationFill  } from "react-icons/ri";
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -77,6 +78,18 @@ const Sidebar = ({ isCollapsed, setIsCollapsed }) => {
                             </span>
                         </Link>
                     </li>
+                    <li className="sidebar-item">
+                        <Link href="/admin/about" className="sidebar-link">
+                            <RiInformationFill  className="sidebar-menu-icon" />
+                            <span
+                                className={`menu-text ${isCollapsed ? "hidden" : ""} ${
+                                    pathname === "/" ? "active-text" : ""
+                                }`}
+                                >
+                                Tentang
+                            </span>
+                        </Link>
+                    </li>
                     <li
                         className={`sidebar-item ${isCollapsed ? "collapsed-hover" : ""}`}
                         ref={sidebarRef}
@@ -86,8 +99,8 @@ const Sidebar = ({ isCollapsed, setIsCollapsed }) => {
                             onClick={() => setShowProjectsSubmenu(!showProjectsSubmenu)}
                         >
                             <div className="sidebar-toggle-label">
-                                <FaClipboardList className="sidebar-menu-icon" />
-                                <span className={`menu-text ${isCollapsed ? "hidden" : ""}`}>Projects</span>
+                                <FaSchool  className="sidebar-menu-icon" />
+                                <span className={`menu-text ${isCollapsed ? "hidden" : ""}`}>Akademik</span>
                             </div>
 
                             {!isCollapsed && (
@@ -100,13 +113,40 @@ const Sidebar = ({ isCollapsed, setIsCollapsed }) => {
                         {(isCollapsed || showProjectsSubmenu) && (
                             <ul className={`submenu-sidebar ${isCollapsed && showProjectsSubmenu ? "active" : ""}`}>
                                 <li>
-                                    <Link href="" className="submenu-link">List Projects</Link>
+                                    <Link href="/admin/academic/elementary-school" className="submenu-link">SD</Link>
                                 </li>
                                 <li>
-                                    <Link href="" className="submenu-link">List Tables</Link>
+                                    <Link href="/admin/academic/junior-high-school" className="submenu-link">SMP</Link>
+                                </li>
+                                <li>
+                                    <Link href="/admin/academic/senior-high-school" className="submenu-link">SMA</Link>
                                 </li>
                             </ul>
                         )}
+                    </li>
+                    <li className="sidebar-item">
+                        <Link href="/admin/living" className="sidebar-link">
+                            <FaMosque className="sidebar-menu-icon" />
+                            <span
+                                className={`menu-text ${isCollapsed ? "hidden" : ""} ${
+                                    pathname === "/" ? "active-text" : ""
+                                }`}
+                                >
+                                Kehidupan Pesantren
+                            </span>
+                        </Link>
+                    </li>
+                    <li className="sidebar-item">
+                        <Link href="/admin/contact" className="sidebar-link">
+                            <RiContactsBook2Fill className="sidebar-menu-icon" />
+                            <span
+                                className={`menu-text ${isCollapsed ? "hidden" : ""} ${
+                                    pathname === "/" ? "active-text" : ""
+                                }`}
+                                >
+                                Kontak
+                            </span>
+                        </Link>
                     </li>
                     
                 </ul>

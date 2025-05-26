@@ -74,7 +74,6 @@ const Container_Living = () => {
                         </div>
                         </>
                     ) : (
-                        // Gambar di kiri (layout: gambar kiri - teks kanan)
                         <>
                         <div className="left-fasilitas-olahraga">
                             <div className="top-head-fasilitas-olahraga">
@@ -118,66 +117,6 @@ const Container_Living = () => {
                             </div>
                         </div>
                         ))}
-                        {/* <div className="card-aktivitas">
-                            <img
-                                src="/images/kehidupan-pesantren/aktivitas/aktivitas-dummy.webp"
-                                alt="aktivitas-card"
-                                className="aktivitas-img"
-                            />
-                            <div className="aktivitas-overlay">
-                                <h3>Kesenian & Budaya</h3>
-                            </div>
-                        </div>
-                        <div className="card-aktivitas">
-                            <img
-                                src="/images/kehidupan-pesantren/aktivitas/aktivitas-dummy.webp"
-                                alt="aktivitas-card"
-                                className="aktivitas-img"
-                            />
-                            <div className="aktivitas-overlay">
-                                <h3>Olahraga</h3>
-                            </div>
-                        </div>
-                        <div className="card-aktivitas">
-                            <img
-                                src="/images/kehidupan-pesantren/aktivitas/aktivitas-dummy.webp"
-                                alt="aktivitas-card"
-                                className="aktivitas-img"
-                            />
-                            <div className="aktivitas-overlay">
-                                <h3>Kerohanian</h3>
-                            </div>
-                        </div>
-                        <div className="card-aktivitas">
-                            <img
-                                src="/images/kehidupan-pesantren/aktivitas/aktivitas-dummy.webp"
-                                alt="aktivitas-card"
-                                className="aktivitas-img"
-                            />
-                            <div className="aktivitas-overlay">
-                                <h3>Penalaran</h3>
-                            </div>
-                        </div>
-                        <div className="card-aktivitas">
-                            <img
-                                src="/images/kehidupan-pesantren/aktivitas/aktivitas-dummy.webp"
-                                alt="aktivitas-card"
-                                className="aktivitas-img"
-                            />
-                            <div className="aktivitas-overlay">
-                                <h3>Sosial</h3>
-                            </div>
-                        </div>
-                        <div className="card-aktivitas">
-                            <img
-                                src="/images/kehidupan-pesantren/aktivitas/aktivitas-dummy.webp"
-                                alt="aktivitas-card"
-                                className="aktivitas-img"
-                            />
-                            <div className="aktivitas-overlay">
-                                <h3>Kegiatan Lainnya</h3>
-                            </div>
-                        </div> */}
                     </div>
                 </div>
             </div>
